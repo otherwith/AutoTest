@@ -25,6 +25,24 @@ def config_url():
     config.read(project_path()+"config.ini")
     return config.get('testUrl','url')
 
+def config_username():
+    """
+    返回config.ini文件中的username
+    :return:
+    """
+    config = configparser.ConfigParser()
+    config.read(project_path()+"config.ini")
+    return config.get('testDate','userName')
+
+def config_usercardnumber():
+    """
+    返回config.ini文件中的usercardnumber
+    :return:
+    """
+    config = configparser.ConfigParser()
+    config.read(project_path()+"config.ini")
+    return config.get('testDate','userCardNumber')
+
 
 if __name__ == '__main__':
     print("项目路径为： "+project_path())

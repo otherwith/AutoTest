@@ -41,4 +41,4 @@ class BookPage(Base):
         except:
             self.log.error("车次查询失败")
             None
-        return self.url()
+        # return self.url()

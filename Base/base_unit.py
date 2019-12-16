@@ -19,5 +19,6 @@ class UnitBase(unittest.TestCase):
         cls.driver.maximize_window()
         cls.driver.implicitly_wait(10)
 
+    @classmethod
     def tearDownClass(cls) -> None:
         cls.driver.quit()

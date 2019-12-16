@@ -68,4 +68,4 @@ class SearchPage(Base):
         self.search_js(leave_date)
         self.search_btn().click()
         time.sleep(4)
-        return self.url()
+        # return self.url()
